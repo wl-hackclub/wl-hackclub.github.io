@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 var Airtable = require('airtable');
 var base = new Airtable({apiKey: process.env.AIRTABLE_API_KEY}).base('appF6Zkc4Ro45xess');
+require('dotenv').config();
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -41,10 +42,10 @@ app.post('/signup', (req, res) => {
 });
 
 app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/views/index.html');
+  response.sendFile(__dirname + '/index.html');
 });
 app.get('/added', (request, response) => {
-  response.sendFile(__dirname + '/views/added.html');
+  response.sendFile(__dirname + '/added.html');
 })
 
 http.listen(3000);
