@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="/style.css">
+        <title>WLHS Hack Club</title>
+    </head>
+    <body>
+        <img src="https://raw.githubusercontent.com/MatthewStanciu/wlhs-hackclub-site/master/wlhs%20hack%20club%20logo%20rounded.png" width=200 height=200 class="img">
+        <div id="tw">
+          <div id="typewriter"></div>
+        </div>        
+
+        <script src="https://unpkg.com/typewriter-effect@2.4.6/dist/core.js"></script>
+        <script type="text/javascript">
+            var typewriter = new Typewriter("#typewriter", {loop:false});
+
+            typewriter.typeString('A place for ')
+            .typeString('<strong>makers.</strong>')
+            .pauseFor(2500)
+            .deleteChars(7)
+            .typeString('artists.')
+            .pauseFor(2500)
+            .deleteChars(8)
+            .typeString('designers.')
+            .pauseFor(2500)
+            .deleteChars(10)
+            .typeString('entrepreneurs.')
+            .pauseFor(2500)
+            .deleteChars(14)
+            .typeString('thinkers.')
+            .pauseFor(2500)
+            .deleteChars(9)
+            .typeString('tinkerers.')
+            .pauseFor(2500)
+            .deleteChars(10)
+            .typeString('mathematicians.')
+            .pauseFor(2500)
+            .deleteChars(15)
+            .typeString('dreamers.')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('A place for ')
+            .typeString('<strong>makers.</strong>')
+            .start();
+        </script>
+        <br/><br/>
+        <h2>Wednesdays, 3:30-4:30 in Mr. Cullen's Room 2234</h2>
+        <br/>
+        <form action="/signup" method="POST" id="signupform" class="signupform">
+            <input id="name" name="name" type="name" placeholder="Enter your name" autofocus>
+        </form>
+        <button type="submit" form="signupform"><strong>Sign Up</strong></button>
+      <br/><br/><br/>
+    </body>
+</html>
